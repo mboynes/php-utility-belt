@@ -7,7 +7,7 @@ if ( !defined( 'DIR' ) )
 	define( 'DIR', dirname( __FILE__ ) . '/' );
 
 
-require_once DIR . 'belt.php';
+require_once DIR . 'lib/belt.php';
 
 get_header();
 

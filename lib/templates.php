@@ -65,17 +65,10 @@ function get_footer() {
 	?>
 
 		</div>
-
-		<hr>
-
-		<footer>
-			<p>&copy; Me 2012</p>
-		</footer>
-
 	</div>
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script type="text/javascript" src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<?php echo PATH ?>application.js"></script>
+	<script type="text/javascript" src="<?php echo PATH ?>assets/application.js"></script>
 </body>
 </html>
 <?php

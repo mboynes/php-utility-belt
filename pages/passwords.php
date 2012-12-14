@@ -1,5 +1,5 @@
 <?php
-$words = file( 'words.txt' );
+$words = file( DIR . 'assets/words.txt' );
 $limit = count( $words ) - 1;
 
 function some_random_word() {

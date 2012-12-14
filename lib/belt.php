@@ -13,4 +13,4 @@ if ( isset( $_GET['page'] ) ) {
 	exit;
 }
 
-require_once DIR . 'templates.php';
+require_once DIR . 'lib/templates.php';
