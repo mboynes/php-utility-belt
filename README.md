@@ -12,16 +12,16 @@ This application allows you to run arbitrary PHP code and is intended to be host
 
 * Run arbitrary PHP off the main page
 
-![PHP Utility Belt Home Screen](assets/screenshot1.jpg)
+![PHP Utility Belt Home Screen](https://raw.github.com/mboynes/php-utility-belt/master/assets/screenshot1.jpg)
 
 * Test regular expressions out instantly and see the matches from preg_match and preg_match_all, or see the results from a preg_replate
 
-![PHP Utility Regular Expressions Screen](assets/screenshot2.jpg)
+![PHP Utility Regular Expressions Screen](https://raw.github.com/mboynes/php-utility-belt/master/assets/screenshot2.jpg)
 
 * Get 10 random passwords containing two words, two digits, a capital letter, and a symbol
 * Serialize and unserialize
 
-![PHP Utility Belt Serialize and Unserialize Screen](assets/screenshot3.jpg)
+![PHP Utility Belt Serialize and Unserialize Screen](https://raw.github.com/mboynes/php-utility-belt/master/assets/screenshot3.jpg)
 
 
 * Test date formats against timestamps from mktime, strtotime, or a numeric timestamp
