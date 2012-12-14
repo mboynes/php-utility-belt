@@ -20,6 +20,7 @@ function get_header( $title = 'PHP Utility Belt' ) {
 	<![endif]-->
 	<style type="text/css" media="screen">
 		body { padding-top: 60px; }
+		@media (max-width:979px) { body { padding-top: 0; } }
 		code { color: black; }
 	</style>
 	<script type="text/javascript">var PATH = '<?php echo PATH ?>';</script>
@@ -49,10 +50,6 @@ function get_header( $title = 'PHP Utility Belt' ) {
 	</div>
 
 	<div id="wrapper" class="container">
-		<div class="pull-right">
-			<p style="margin-top:20px"><a href="#" class="btn" id="change_view">Switch View</a></p>
-		</div>
-
 		<h1 class="page-header">Hello, World</h1>
 
 		<div id="view_wrapper" class="row">
