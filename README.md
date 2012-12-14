@@ -11,10 +11,20 @@ This application allows you to run arbitrary PHP code and is intended to be host
 ## Features
 
 * Run arbitrary PHP off the main page
-* Get 10 random passwords containing two words, two digits, a capital letter, and a symbol
+
+![PHP Utility Belt Home Screen](assets/screenshot1.jpg)
+
 * Test regular expressions out instantly and see the matches from preg_match and preg_match_all, or see the results from a preg_replate
-* Test date formats against timestamps from mktime, strtotime, or a numeric timestamp
+
+![PHP Utility Regular Expressions Screen](assets/screenshot2.jpg)
+
+* Get 10 random passwords containing two words, two digits, a capital letter, and a symbol
 * Serialize and unserialize
+
+![PHP Utility Belt Serialize and Unserialize Screen](assets/screenshot3.jpg)
+
+
+* Test date formats against timestamps from mktime, strtotime, or a numeric timestamp
 
 
 ## Author
