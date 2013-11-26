@@ -12,6 +12,8 @@
 			<div class="form-actions">
 				<input name="serialization" value="Serialize" type="submit" class="btn" />
 				<input name="serialization" value="Unserialize" type="submit" class="btn" />
+				<input name="serialization" value="JSON Encode" type="submit" class="btn" />
+				<input name="serialization" value="JSON Decode" type="submit" class="btn" />
 			</div>
 		</form>
 	</div>

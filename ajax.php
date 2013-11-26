@@ -23,14 +23,14 @@ elseif ( isset( $_POST['regex'] ) ) {
 			else
 				echo "No matches Found";
 			break;
-		
+
 		case 'Match All':
 			if ( $count = preg_match_all( $_POST['expression'], $_POST['content'], $matches ) )
 				echo "$count matches found\n", htmlentities( print_r( $matches, 1 ) );
 			else
 				echo "No matches found";
 			break;
-		
+
 		case 'Replace':
 			if ( $count = preg_match_all( $_POST['expression'], $_POST['content'], $matches ) )
 				echo "$count matches found\n";
@@ -86,10 +86,29 @@ elseif ( isset( $_POST['time'] ) ) {
 
 # Serialization Module
 elseif ( isset( $_POST['serialization'] ) ) {
-	if ( 'Serialize' == $_POST['serialization'] )
+	if ( 'Serialize' == $_POST['serialization'] ) {
 		echo serialize( call_user_func( create_function('', "return {$_POST['serializee']};") ) );
-	else
-		print_r( unserialize( $_POST['serializee'] ) );
+	} elseif ( 'JSON Encode' == $_POST['serialization'] ) {
+		echo json_encode( call_user_func( create_function('', "return {$_POST['serializee']};") ) );
+	} elseif ( 'JSON Decode' == $_POST['serialization'] ) {
+		print_r( json_decode( $_POST['serializee'], true ) );
+	} else {
+		$unserialized = unserialize( $_POST['serializee'] );
+		if ( false !== $unserialized ) {
+			print_r( $unserialized );
+		} else {
+			# There was an error, try to fix it
+			# common issue is with crlf
+			$serializee = str_replace( array( "\n\r", "\r\n" ), "\n", $_POST['serializee'] );
+			$unserialized = unserialize( $serializee );
+			if ( false !== $unserialized ) {
+				echo "Notice: CRLF newlines corrected\n===============================\n\n";
+				print_r( $unserialized );
+			} else {
+				echo 'Error unserializing data';
+			}
+		}
+	}
 }
 
 header( "Content-Type: $content_type" );
