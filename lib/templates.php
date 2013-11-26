@@ -42,6 +42,7 @@ function get_header( $title = 'PHP Utility Belt' ) {
 						<li><a href="#passwords">Passwords</a></li>
 						<li><a href="#regex">Regular Expressions</a></li>
 						<li><a href="#time">Date &amp; Time</a></li>
+						<li><a href="#printf">Printf</a></li>
 						<li><a href="#serialization">Serialization</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
@@ -50,8 +51,6 @@ function get_header( $title = 'PHP Utility Belt' ) {
 	</div>
 
 	<div id="wrapper" class="container">
-		<h1 class="page-header">Hello, World</h1>
-
 		<div id="view_wrapper" class="row">
 
 <?php
